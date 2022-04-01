@@ -16,80 +16,105 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Checkout Page</title>
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <h1 class="page-title">Checkout</h1>
+    <div class="container">
+      <div class="form">
+        <div class="contact">
+          <div class="contact-header"><h1>Contact Information</h1></div>
+          <div class="contact-form">
+            <div class="label-name">E-mail</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Enter your email...">
+            </div>
+            <div class="label-name">Phone</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Enter your Phone...">
+            </div>
+          </div>
+        </div>
+        <div class="shipping">
+          <div class="shipping-header"><h1>Shipping Address</h1></div>
+          <div class="shipping-form">
+            <div class="label-name">Full name</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Your Name...">
+            </div>
+            <div class="label-name">Address</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Your address...">
+            </div>
+            <div class="label-name">City</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Your City...">
+            </div>
+            <div class="label-name">Country</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Your Country..">
+            </div>
+            <div class="label-name">Postal Code</div>
+            <div class="input-container">
+              <i class="fa fa"></i>
+              <input type="text" placeholder="Your Postal Code..">
+            </div>
+        </div>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="billing-card">
+        <div class="item-panel-list">
+          <div class="item-panel">
+            <div class="item-image">
+              <img src="./photo1.png" alt="">
+            </div>
+            <div class="item-info">
+              <div class="item-name">Vintage Backbag</div>
+              <div class="item-price">
+                <span class="new-price">$54.99</span>
+                <span class="old-price">$94.99</span>
+              </div>
+              <div class="item-quantity">
+                <button>&minus;</button>
+                <span class="amount">1</span>
+                <button>&plus;</button>
+              </div>
+            </div>
+          </div>
+          <div class="item-panel">
+            <div class="item-image">
+              <img src="./photo2.png" alt="">
+            </div>
+            <div class="item-info">
+              <div class="item-name">Levi Shoes</div>
+              <div class="item-price">
+                <span class="new-price">$74.99</span>
+                <span class="old-price">$94.99</span>
+              </div>
+              <div class="item-quantity">
+                <button>&minus;</button>
+                <span class="amount">1</span>
+                <button>&plus;</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="total-bill">
+            <div class="shipping"></div>
+            <div class="total"></div>
+          </div>
+        </div>
     </div>
   </body>
 </html>
